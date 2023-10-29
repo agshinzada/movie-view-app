@@ -11,7 +11,7 @@ form.addEventListener("submit", function (e) {
 async function getMovie(value = "delibal") {
   try {
     let response = await fetch(
-      `http://www.omdbapi.com/?t=${value}&apikey=${key}`
+      `https://www.omdbapi.com/?t=${value}&apikey=${key}`
     );
     const data = await response.json();
 
